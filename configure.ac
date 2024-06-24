@@ -5,6 +5,8 @@ AC_PREREQ([2.71])
 AC_INIT([libffi],[3.4.6],[http://github.com/libffi/libffi/issues])
 AC_CONFIG_HEADERS([fficonfig.h])
 
+m4_pattern_allow([LT_SYS_SYMBOL_USCORE])
+
 AC_CANONICAL_TARGET
 target_alias=${target_alias-$host_alias}
 
